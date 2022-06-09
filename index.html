@@ -10,13 +10,15 @@
     <meta name="author" content="Martin Dukoski" />
     <link rel="stylesheet" href="assets/css/lanuma--main-style.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="assets/js/lanuma--main-script.js"></script>
+    <script type = "text/javascript" src="assets/js/lanuma--main-script.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fira+Sans&family=Roboto+Mono&family=Ubuntu+Mono&display=swap"  />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
-
+    
+  
   </head>
+
   <body>
     <!--==================== HEADER ====================-->
     <!--==== TOP BAR ===-->
@@ -112,6 +114,7 @@
         <div class="product-box--container">
           <div class="product-box">
             <span class="product-box--label">Best seller</span>
+            <button class="product-box--add-to-cart" onclick="addToCart()">Dodaj v košarico</button>
             <img src="assets/img/placeholder--product-image_01.jpg" alt="shopping cart" class="product-box--img" />
             <h4 class="product-box--name">Lanuma</h4>
             <div class="product-loop--container--price">
@@ -120,8 +123,9 @@
             </div>
           </div>
           <div class="product-box">
-            <span class="product-box--label">Best seller</span>
-            <img src="assets/img/placeholder--product-image_01.jpg" alt="shopping cart" class="product-box--img" />
+            <span class="product-box--label">Novo</span>
+            <button class="product-box--add-to-cart" onclick="addToCart()">Dodaj v košarico</button>
+            <img src="assets/img/placeholder--product-image_02.jpg" alt="shopping cart" class="product-box--img" />
             <h4 class="product-box--name">Lanuma</h4>
             <div class="product-loop--container--price">
               <span class="product-loop--container--price--del">35,50 €</span>
@@ -130,7 +134,8 @@
           </div>
           <div class="product-box">
             <span class="product-box--label">Best seller</span>
-            <img src="assets/img/placeholder--product-image_01.jpg" alt="shopping cart" class="product-box--img" />
+            <button class="product-box--add-to-cart" onclick="addToCart()">Dodaj v košarico</button>
+            <img src="assets/img/placeholder--product-image_03.jpg" alt="shopping cart" class="product-box--img" />
             <h4 class="product-box--name">Lanuma</h4>
             <div class="product-loop--container--price">
               <span class="product-loop--container--price--del">35,50 €</span>
@@ -138,8 +143,9 @@
             </div>
           </div>
           <div class="product-box">
-            <span class="product-box--label">Best seller</span>
-            <img src="assets/img/placeholder--product-image_01.jpg" alt="shopping cart" class="product-box--img" />
+            <span class="product-box--label">Novo</span>
+            <button class="product-box--add-to-cart" onclick="addToCart()">Dodaj v košarico</button>
+            <img src="assets/img/placeholder--product-image_04.jpg" alt="shopping cart" class="product-box--img" />
             <h4 class="product-box--name">Lanuma</h4>
             <div class="product-loop--container--price">
               <span class="product-loop--container--price--del">35,50 €</span>
@@ -150,7 +156,8 @@
         <div class="product-box--container">
           <div class="product-box">
             <span class="product-box--label">Best seller</span>
-            <img src="assets/img/placeholder--product-image_01.jpg" alt="shopping cart" class="product-box--img" />
+            <button class="product-box--add-to-cart" onclick="addToCart()">Dodaj v košarico</button>
+            <img src="assets/img/placeholder--product-image_04.jpg" alt="shopping cart" class="product-box--img" />
             <h4 class="product-box--name">Lanuma</h4>
             <div class="product-loop--container--price">
               <span class="product-loop--container--price--del">35,50 €</span>
@@ -159,7 +166,18 @@
           </div>
           <div class="product-box">
             <span class="product-box--label">Best seller</span>
-            <img src="assets/img/placeholder--product-image_01.jpg" alt="shopping cart" class="product-box--img" />
+            <button class="product-box--add-to-cart" onclick="addToCart()">Dodaj v košarico</button>
+            <img src="assets/img/placeholder--product-image_03.jpg" alt="shopping cart" class="product-box--img" />
+            <h4 class="product-box--name">Lanuma</h4>
+            <div class="product-loop--container--price">
+              <span class="product-loop--container--price--del">35,50 €</span>
+              <span class="product-loop--container--price--ins">24,90 €</span>
+            </div>
+          </div>
+          <div class="product-box">
+            <span class="product-box--label">Top</span>
+            <button class="product-box--add-to-cart" onclick="addToCart()">Dodaj v košarico</button>
+            <img src="assets/img/placeholder--product-image_02.jpg" alt="shopping cart" class="product-box--img" />
             <h4 class="product-box--name">Lanuma</h4>
             <div class="product-loop--container--price">
               <span class="product-loop--container--price--del">35,50 €</span>
@@ -168,15 +186,7 @@
           </div>
           <div class="product-box">
             <span class="product-box--label">Best seller</span>
-            <img src="assets/img/placeholder--product-image_01.jpg" alt="shopping cart" class="product-box--img" />
-            <h4 class="product-box--name">Lanuma</h4>
-            <div class="product-loop--container--price">
-              <span class="product-loop--container--price--del">35,50 €</span>
-              <span class="product-loop--container--price--ins">24,90 €</span>
-            </div>
-          </div>
-          <div class="product-box">
-            <span class="product-box--label">Best seller</span>
+            <button class="product-box--add-to-cart" onclick="addToCart()">Dodaj v košarico</button>
             <img src="assets/img/placeholder--product-image_01.jpg" alt="shopping cart" class="product-box--img" />
             <h4 class="product-box--name">Lanuma</h4>
             <div class="product-loop--container--price">

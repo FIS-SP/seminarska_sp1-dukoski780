@@ -424,6 +424,22 @@ button {
   justify-content: space-between;
 }
 
+.product-box--add-to-cart {
+  position: absolute;
+  display: block;
+  margin-top: 220px;
+  margin-left: 74px;
+  padding: 12px 24px;
+  color: var(--white-color);
+  background-color: var(--secondary-color);
+  z-index: 2;
+  visibility: hidden;
+}
+
+.product-box:hover .product-box--add-to-cart{
+  visibility: visible;
+}
+
 @media  (max-width:768px) {
   .product-box--container {
     flex-direction: column;
